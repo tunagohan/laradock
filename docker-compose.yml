@@ -5,7 +5,7 @@ services:
     applications:
       image: tianon/true
       volumes:
-        - ${APPLICATION}web:/var/www
+        - ${APPLICATION}:/var/www
 
 ### Workspace Utilities Container ###########################
     workspace:
