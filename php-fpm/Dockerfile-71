@@ -301,6 +301,7 @@ ADD ./laravel.pool.conf /usr/local/etc/php-fpm.d/
 #RUN rm -r /var/lib/apt/lists/*
 
 RUN usermod -u 1000 www-data
+COPY php${PHP_FPM_VERSION}.ini /usr/local/etc/php/php.ini
 
 WORKDIR /var/www
 
