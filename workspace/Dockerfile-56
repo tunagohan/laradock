@@ -440,3 +440,6 @@ RUN apt-get clean && \
 
 # Set default work directory
 WORKDIR /var/www
+
+# COPY php.ini
+COPY php.ini /etc/php/7.1/cli/php.ini
